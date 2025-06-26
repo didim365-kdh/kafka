@@ -2480,6 +2480,3 @@ provisioning:
   ##         containerPort: 1234
   ##
   initContainers: []
-  
-configurationOverrides:
-  "advertised.listeners": "PLAINTEXT://kdh-kafka-controller-0.kdh-kafka-controller-headless.kafka.svc.cluster.local:9092"
