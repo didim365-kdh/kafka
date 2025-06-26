@@ -178,9 +178,9 @@ listeners:
   ## @param listeners.client.sslClientAuth Optional. If SASL_SSL is enabled, configure mTLS TLS authentication type. If SSL protocol is enabled, overrides tls.authType for this listener. Allowed values are 'none', 'requested' and 'required'
   client:
     containerPort: 9092
-    protocol: SASL_PLAINTEXT
+    protocol: PLAINTEXT
     name: CLIENT
-    sslClientAuth: ""
+    sslClientAuth: "none"
   ## @param listeners.controller.name Name for the Kafka controller listener
   ## @param listeners.controller.containerPort Port for the Kafka controller listener
   ## @param listeners.controller.protocol Security protocol for the Kafka controller listener. Allowed values are 'PLAINTEXT', 'SASL_PLAINTEXT', 'SASL_SSL' and 'SSL'
