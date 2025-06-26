@@ -2482,4 +2482,4 @@ provisioning:
   initContainers: []
   
 configurationOverrides:
-  "advertised.listeners": "PLAINTEXT://kdh-kafka.kafka.svc.cluster.local:9092"
+  "advertised.listeners": "PLAINTEXT://kdh-kafka-controller-0.kdh-kafka-controller-headless.kafka.svc.cluster.local:9092"
