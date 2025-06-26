@@ -25,9 +25,9 @@ spec:
               value: "local"
             - name: KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS
               value: "kdh-kafka-controller-0.kdh-kafka-controller-headless.kafka.svc.cluster.local:9092"
-            - name: KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS
+            - name: KAFKA_CLUSTERS_1_BOOTSTRAPSERVERS
               value: "kdh-kafka-controller-1.kdh-kafka-controller-headless.kafka.svc.cluster.local:9092"
-            - name: KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS
+            - name: KAFKA_CLUSTERS_2_BOOTSTRAPSERVERS
               value: "kdh-kafka-controller-2.kdh-kafka-controller-headless.kafka.svc.cluster.local:9092"
      #       - name: KAFKA_CLUSTERS_0_ZOOKEEPER
      #        value: "your-zookeeper:2181"        # (선택) Zookeeper 주소
