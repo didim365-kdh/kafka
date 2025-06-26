@@ -2480,3 +2480,8 @@ provisioning:
   ##         containerPort: 1234
   ##
   initContainers: []
+
+advertisedListeners:
+  internal: INTERNAL://kdh-kafka-controller-headless.kafka.svc.cluster.local:9092
+  external: EXTERNAL://14.63.186.67:30864
+ 
