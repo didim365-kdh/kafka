@@ -27,3 +27,17 @@ spec:
               value: "kdh-kafka:9092"
      #       - name: KAFKA_CLUSTERS_0_ZOOKEEPER
      #        value: "your-zookeeper:2181"        # (선택) Zookeeper 주소
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kafka-ui
+  namespace: kafka
+spec:
+  selector:
+    app: kafka-ui
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: ClusterIP
