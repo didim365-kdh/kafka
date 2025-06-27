@@ -1860,7 +1860,7 @@ externalAccess:
       externalIPs: []
       ## @param externalAccess.broker.service.useHostIPs Use service host IPs to configure Kafka external listener when service type is NodePort
       ##
-      useHostIPs: true
+      useHostIPs: false
       ## @param externalAccess.broker.service.usePodIPs using the MY_POD_IP address for external access.
       ##
       usePodIPs: false
