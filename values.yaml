@@ -1755,7 +1755,7 @@ externalAccess:
       ##   - 30001
       ##   - 30002
       ##
-      nodePorts: [32002]
+      nodePorts: [32000, 32001, 32002, 32003, 32004, 32005, 32006, 32007, 32008, 32009]
       ## @param externalAccess.controller.service.externalIPs Use distinct service host IPs to configure Kafka external listener when service type is NodePort. Length must be the same as replicaCount
       ## e.g:
       ## externalIPs:
@@ -1850,7 +1850,7 @@ externalAccess:
       ##   - 30001
       ##   - 30002
       ##
-      nodePorts: [32000, 32001, 32003, 32004, 32005, 32006, 32007, 32008, 32009, 32010]
+      nodePorts: []
       ## @param externalAccess.broker.service.externalIPs Use distinct service host IPs to configure Kafka external listener when service type is NodePort. Length must be the same as replicaCount
       ## e.g:
       ## externalIPs:
