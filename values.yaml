@@ -1774,7 +1774,7 @@ externalAccess:
       ##
       labels:
         app.kubernetes.io/name: kafka
-        app.kubernetes.io/component: controller
+        app.kubernetes.io/component: controller-eligible
         app.kubernetes.io/instance: kdh-kafka
       ## @param externalAccess.controller.service.annotations Service annotations for external access
       ##
