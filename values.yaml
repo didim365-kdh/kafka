@@ -1803,7 +1803,7 @@ externalAccess:
     service:
       ## @param externalAccess.broker.service.type Kubernetes Service type for external access. It can be NodePort, LoadBalancer or ClusterIP
       ##
-      type: NodePort
+      type: LoadBalancer
       ## @param externalAccess.broker.service.ports.external Kafka port used for external access when service type is LoadBalancer
       ##
       ports:
