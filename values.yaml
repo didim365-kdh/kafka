@@ -222,9 +222,9 @@ listeners:
   ## @param listeners.overrideListeners Overrides the Kafka 'listeners' configuration setting.
   ## @param listeners.advertisedListeners Overrides the Kafka 'advertised.listener' configuration setting.
   ## @param listeners.securityProtocolMap Overrides the Kafka 'security.protocol.map' configuration setting.
-  overrideListeners: ""
-  advertisedListeners: ""
-  securityProtocolMap: ""
+  overrideListeners: "OUTSIDE://0.0.0.0:9092"
+  advertisedListeners: "OUTSIDE://14.63.186.66:32002"
+  securityProtocolMap: "OUTSIDE:PLAINTEXT"
 ## @section Kafka SASL parameters
 ## Kafka SASL settings for authentication, required if SASL_PLAINTEXT or SASL_SSL listeners are configured
 ##
@@ -2483,8 +2483,4 @@ provisioning:
   ##         containerPort: 1234
   ##
   initContainers: []
-
-advertisedListeners:
-  internal: INTERNAL://kdh-kafka-controller-headless.kafka.svc.cluster.local:9092
-  external: EXTERNAL://14.63.186.67:30864
  
