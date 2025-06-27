@@ -1772,7 +1772,10 @@ externalAccess:
       publishNotReadyAddresses: false
       ## @param externalAccess.controller.service.labels Service labels for external access
       ##
-      labels: {}
+      labels:
+        app.kubernetes.io/name: kafka
+        app.kubernetes.io/component: controller
+        app.kubernetes.io/instance: kdh-kafka
       ## @param externalAccess.controller.service.annotations Service annotations for external access
       ##
       annotations: {}
