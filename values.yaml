@@ -1688,7 +1688,7 @@ service:
 externalAccess:
   ## @param externalAccess.enabled Enable Kubernetes external cluster access to Kafka brokers
   ##
-  enabled: false
+  enabled: true
   ## Service settings
   controller:
     ## @param externalAccess.controller.forceExpose If set to true, force exposing controller-eligible nodes although they are configured as controller-only nodes
@@ -1700,7 +1700,7 @@ externalAccess:
     service:
       ## @param externalAccess.controller.service.type Kubernetes Service type for external access. It can be NodePort, LoadBalancer or ClusterIP
       ##
-      type: LoadBalancer
+      type: NodePort
       ## @param externalAccess.controller.service.ports.external Kafka port used for external access when service type is LoadBalancer
       ##
       ports:
