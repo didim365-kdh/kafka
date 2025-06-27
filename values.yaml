@@ -1688,12 +1688,12 @@ service:
 externalAccess:
   ## @param externalAccess.enabled Enable Kubernetes external cluster access to Kafka brokers
   ##
-  enabled: false
+  enabled: true
   ## Service settings
   controller:
     ## @param externalAccess.controller.forceExpose If set to true, force exposing controller-eligible nodes although they are configured as controller-only nodes
     ##
-    forceExpose: false
+    forceExpose: true
     ## Parameters to configure K8s service(s) used to externally access Kafka brokers
     ## Note: A new service per broker will be created
     ##
